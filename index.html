@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDock Ultimate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <div class="bg-mesh">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <!-- <div class="logo-icon">WD</div> -->
+                 <img src="images/logoWD.png" class="logo-icon" alt="">
+                <span class="logo-text">WebDock</span>
+            </a>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                <li><a href="#showcase" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="#download" onclick="toggleMenu()">Download</a></li>
+                <li class="mobile-cta"><a href="#download" style="color: black;" class="btn-sm">Get v1.0</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a href="#download" class="btn-sm desktop-cta">Get v1.0</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-up">
+                <div class="badge">
+                    <span class="dot"></span> Stable Release v1.0
+                </div>
+                <h1>Your Apps.<br> <span class="gradient-text">Unchained.</span></h1>
+                <p>WebDock transforms your favorite websites and local HTML projects into dedicated, high-performance desktop apps.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <i data-feather="download"></i> Download Windows
+                    </button>
+                    <!-- <button class="btn-secondary">
+                        <i data-feather="github"></i> GitHub
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="hero-visual fade-up delay-1">
+                <div class="tilt-element">
+                    <img src="images/wd-prev1_.PNG" 
+                         alt="WebDock Screenshot" 
+                         class="hero-img">
+                    
+                    <div class="float-badge">
+                        <i data-feather="zap"></i>
+                        <div>
+                            <span>Performance</span>
+                            <b>Native Speed</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why WebDock?</h2>
+            </div>
+            <div class="grid-3">
+                <div class="feature-box">
+                    <div class="icon-wrap blue"><i data-feather="monitor"></i></div>
+                    <h3>Distraction Free</h3>
+                    <p>Focus on your work with dedicated windows, separate from your browser tabs.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrap purple"><i data-feather="moon"></i></div>
+                    <h3>Dark Mode</h3>
+                    <p>Seamlessly integrates with your system theme. Beautiful dark mode included.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrap green"><i data-feather="server"></i></div>
+                    <h3>Local Server</h3>
+                    <p>Built-in Python server lets you run local HTML folders instantly.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrap pink"><i data-feather="image"></i></div>
+                    <h3>Smart Icons</h3>
+                    <p>Automatically fetches high-res favicons or lets you use custom PNGs.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrap orange"><i data-feather="anchor"></i></div>
+                    <h3>Taskbar Pinning</h3>
+                    <p>Create real .lnk shortcuts that you can pin to your Windows Taskbar.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrap red"><i data-feather="shield"></i></div>
+                    <h3>Privacy First</h3>
+                    <p>Open source and offline-first. Your data stays on your machine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="showcase section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>See it in Action</h2>
+            </div>
+            
+            <div class="gallery-scroller">
+                <div class="gallery-item">
+                    <div class="glass-frame">
+                        <img src="images/wd-prev_.PNG" class="img-placeholder" alt="">
+                        <!-- <div class="img-placeholder">Dashboard UI</div> -->
+                        <caption>Main Library</caption>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="glass-frame">
+                        <img src="images/wd-sett.PNG" class="img-placeholder" alt="">
+                        <!-- <div class="img-placeholder dark">Settings UI</div> -->
+                        <caption>Dark Mode Settings</caption>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="glass-frame">
+                                                <img src="images/wd-prev-app1.PNG" class="img-placeholder" alt="">
+
+                        <!-- <div class="img-placeholder">Icon Picker</div> -->
+                        <caption>Custom Icons</caption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="cta-section section-pad">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ready to declutter?</h2>
+                <p>Join thousands of users organizing their digital workspace.</p>
+                <div class="hero-buttons center-btns">
+                    <button class="btn-primary">Download v1.0</button>
+                    <!-- <button class="btn-secondary">Documentation</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WebDock.</p>
+            <!-- <p>&copy; 2026 WebDock Ultimate.</p> -->
+        </div>
+    </footer>
+<div id="viewer" class="viewer-backdrop">
+        <div class="viewer-content">
+            <img id="viewer-img" src="" alt="Preview">
+            <p id="viewer-caption"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>feather.replace()</script>
+</body>
+</html>
