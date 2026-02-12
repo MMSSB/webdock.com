@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates - WebDock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="shortcut icon" href="images/logoWD.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="bg-mesh">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                                 <img src="images/logoWD.png" class="logo-icon" alt="">
+
+                <!-- <div class="logo-icon">WD</div> -->
+                <span class="logo-text">WebDock</span>
+            </a>
+
+            <!-- <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Updates</a></li> <li><a href="index.html#download">Download</a></li>
+            </ul> -->
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html#features" onclick="toggleMenu()">Features</a></li>
+                <li><a href="index.html#showcase" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="updates.html" onclick="toggleMenu()">Changelog</a></li>
+                <li><a href="index.html#download" onclick="toggleMenu()">Download</a></li>
+                <li class="mobile-cta"><a href="#download" style="color: black;" class="btn-sm">Get v1.0</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <a href="index.html#download" class="btn-sm desktop-cta">Get v1.0</a>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="badge">
+                    <span class="dot"></span> Live Changelog
+                </div>
+                <h1>Version <span class="gradient-text">History</span></h1>
+                <p>Track the evolution of WebDock. New features, bug fixes, and improvements.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container small-container">
+            
+            <div class="timeline-item">
+                <div class="timeline-marker main"></div>
+                <div class="timeline-date">Feb 12, 2026</div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <h2>v1.0.0</h2>
+                        <span class="version-tag stable">Stable Release</span>
+                    </div>
+                    <p class="release-note">The first public stable release of WebDock Ultimate. Turn any website into a desktop app.</p>
+                    
+                    <ul class="changelog-list">
+                        <li class="new">
+                            <i data-feather="star"></i> 
+                            <span><strong>Native Windows:</strong> WebDock now compiles to native .exe wrappers.</span>
+                        </li>
+                        <li class="new">
+                            <i data-feather="zap"></i> 
+                            <span><strong>Local Server:</strong> Built-in Python engine to host local HTML folders.</span>
+                        </li>
+                        <li class="new">
+                            <i data-feather="moon"></i> 
+                            <span><strong>Dark Mode:</strong> System-sync dark mode support.</span>
+                        </li>
+                        <li class="fix">
+                            <i data-feather="check-circle"></i> 
+                            <span><strong>Fix:</strong> Resolved memory leak in background tabs.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-date">Jan 28, 2026</div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <h2>v0.9.5</h2>
+                        <span class="version-tag beta">Beta</span>
+                    </div>
+                    
+                    <ul class="changelog-list">
+                        <li class="improve">
+                            <i data-feather="trending-up"></i> 
+                            <span><strong>Performance:</strong> Startup time reduced by 40%.</span>
+                        </li>
+                        <li class="new">
+                            <i data-feather="image"></i> 
+                            <span><strong>Custom Icons:</strong> Added ability to upload .ico files for apps.</span>
+                        </li>
+                        <li class="fix">
+                            <i data-feather="shield"></i> 
+                            <span><strong>Security:</strong> Patched SSL verification for localhosts.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-date">Jan 10, 2026</div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <h2>v0.5.0</h2>
+                        <span class="version-tag alpha">Alpha</span>
+                    </div>
+                    
+                    <ul class="changelog-list">
+                        <li class="new">
+                            <i data-feather="package"></i> 
+                            <span><strong>Core:</strong> Initial prototype released to testers.</span>
+                        </li>
+                        <li class="new">
+                            <i data-feather="layout"></i> 
+                            <span><strong>UI:</strong> Added Glassmorphism UI engine.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WebDock.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace()</script>
+</body>
+</html>
